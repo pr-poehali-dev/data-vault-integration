@@ -32,22 +32,22 @@ export function Header() {
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
-        <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
-          <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+        <a href="/" className="flex items-center gap-2 group text-white" onClick={scrollToTop}>
+          <span className="text-xl font-medium tracking-tight font-[Rubik]">Тёплое Дерево</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
           {[
             { label: "Главная", href: "#hero" },
-            { label: "Философия", href: "#about" },
-            { label: "Проекты", href: "#projects" },
+            { label: "О нас", href: "#about" },
+            { label: "Работы", href: "#projects" },
             { label: "Услуги", href: "#services" },
-            { label: "Вопросы", href: "#faq" },
+            { label: "Заявка", href: "#contact" },
           ].map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="hover:text-[rgb(251,146,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(251,146,60)] after:transition-all after:duration-300 text-white"
+                className="hover:text-[rgb(217,119,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(217,119,60)] after:transition-all after:duration-300 text-white"
               >
                 {item.label}
               </a>
@@ -60,11 +60,11 @@ export function Header() {
           className={cn(
             "hidden md:inline-flex items-center gap-2 text-sm px-5 py-2.5 transition-all duration-300",
             scrolled
-              ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
-              : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
+              ? "bg-accent text-white border border-accent hover:bg-accent/90"
+              : "bg-accent text-white border border-accent hover:bg-accent/90",
           )}
         >
-          Связаться
+          Оставить заявку
         </a>
 
         <button
@@ -96,15 +96,15 @@ export function Header() {
           <ul className="flex flex-col gap-6 mb-8">
             {[
               { label: "Главная", href: "#hero" },
-              { label: "Философия", href: "#about" },
-              { label: "Проекты", href: "#projects" },
+              { label: "О нас", href: "#about" },
+              { label: "Работы", href: "#projects" },
               { label: "Услуги", href: "#services" },
-              { label: "Вопросы", href: "#faq" },
+              { label: "Заявка", href: "#contact" },
             ].map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="hover:text-[rgb(251,146,60)] transition-colors duration-300 text-white text-4xl font-light block"
+                  className="hover:text-[rgb(217,119,60)] transition-colors duration-300 text-white text-4xl font-light block"
                   onClick={closeMobileMenu}
                 >
                   {item.label}
@@ -115,10 +115,10 @@ export function Header() {
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white transition-all duration-300 mb-4"
+            className="inline-flex items-center justify-center gap-2 text-sm px-5 py-2.5 bg-accent text-white border border-accent hover:bg-accent/90 transition-all duration-300 mb-4"
             onClick={closeMobileMenu}
           >
-            Связаться
+            Оставить заявку
           </a>
         </div>
       </div>

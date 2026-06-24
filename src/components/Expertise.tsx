@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { ChefHat, Armchair, BookOpen, Hammer } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Кухни на заказ",
+    description: "Кухонные гарнитуры из массива и со столешницами под размер вашего помещения, с надёжной фурнитурой.",
+    icon: ChefHat,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Столы и стулья",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
-  },
-  {
-    title: "Дизайн интерьеров",
-    description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
+      "Обеденные и журнальные столы, стулья и табуреты из натурального дерева — прочные и приятные на ощупь.",
     icon: Armchair,
   },
   {
-    title: "Градостроительство",
+    title: "Шкафы и стеллажи",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Гардеробные, шкафы, полки и стеллажи, которые впишутся в любой интерьер и используют пространство по максимуму.",
+    icon: BookOpen,
+  },
+  {
+    title: "Мебель по эскизу",
+    description:
+      "Воплотим вашу идею: нестандартная мебель по вашему чертежу или фото из интернета. Поможем с эскизом и замером.",
+    icon: Hammer,
   },
 ]
 
@@ -59,12 +59,12 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            Делаем <HighlightedText>любую</HighlightedText>
             <br />
-            практикой
+            мебель
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Возьмёмся за проект любой сложности. Сейчас, в период запуска мастерской, — по себестоимости в обмен на ваш честный отзыв.
           </p>
         </div>
 

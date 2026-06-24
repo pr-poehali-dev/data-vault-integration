@@ -120,10 +120,11 @@ export function Hero() {
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hously-background.png"
-          alt="Минималистичный архитектурный интерьер"
+          src="https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/4b19b551-b288-4e6f-93b0-a7ea132a1808.jpg"
+          alt="Мастерская мебели на заказ"
           className="w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-foreground/40" />
       </div>
 
       <div
@@ -136,26 +137,33 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Архитектурная студия"}</p>
+        <div className="flex flex-col items-center">
+          <span className="inline-flex items-center gap-2 bg-accent text-white text-xs md:text-sm tracking-wide uppercase px-5 py-2.5 rounded-full mb-8 shadow-lg">
+            Акция · Мебель по себестоимости за честный отзыв
+          </span>
+
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-100 mb-4">{"Мастерская мебели на заказ"}</p>
 
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-6xl font-medium text-balance text-center text-white mb-8 tracking-tight leading-[0.95] lg:text-8xl"
           >
-            {"Создаем пространства"}
+            {"Мебель из дерева,"}
             <br />
-            <span className="text-orange-200">{"для жизни"}</span>
+            <span className="text-orange-200">{"созданная для вас"}</span>
           </h1>
-        </div>
-      </div>
 
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        <img
-          src="/images/hously-foreground.png"
-          alt="Мраморная кухонная столешница"
-          className="w-full h-full object-cover object-center"
-        />
+          <p className="text-white/85 text-lg text-center max-w-xl mb-10">
+            Запускаем мастерскую и набираем первых клиентов. Сделаем вашу мебель по себестоимости — взамен только честный отзыв о работе.
+          </p>
+
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 text-sm tracking-wide hover:bg-accent/90 transition-colors duration-300"
+          >
+            Получить расчёт по себестоимости
+          </a>
+        </div>
       </div>
 
       {animationComplete && (

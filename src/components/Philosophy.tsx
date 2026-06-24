@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Цена по себестоимости",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Сейчас мы делаем мебель без наценки — оплачиваете только материалы и фурнитуру. Взамен просим лишь честный отзыв о работе.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Массив дерева",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Работаем с дубом, ясенем, буком и сосной. Только натуральное дерево, проверенная фурнитура и безопасные масла для покрытия.",
   },
   {
-    title: "Естественная динамика",
+    title: "Точно по размерам",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Делаем мебель под ваше помещение и задачи — ни сантиметра лишнего. Замер, эскиз и согласование перед началом работ.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Душа в каждой детали",
+    description: "Мы только начинаем, поэтому вкладываемся в каждый заказ на 100%. Для нас важна репутация и довольные первые клиенты.",
   },
 ]
 
@@ -53,18 +53,18 @@ export function Philosophy() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Почему мы</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Честная
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>работа</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
-                src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
+                src="https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/e346b179-cf2b-4f63-b357-215fc7c7e4ea.jpg"
+                alt="Стол из массива дуба ручной работы"
+                className="opacity-95 relative z-10 w-auto rounded-sm"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Мебель — это не просто предметы, это уют вашего дома на годы вперёд. Мы делаем её честно, из хороших материалов и с вниманием к деталям.
             </p>
 
             {philosophyItems.map((item, index) => (
