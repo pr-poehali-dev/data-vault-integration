@@ -4,11 +4,11 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Обеденный стол из дуба",
+    title: "Кухонный гарнитур",
     category: "Кухня",
-    location: "Дерево + металл",
+    location: "МДФ, фасады, столешница",
     year: "Под заказ",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/2c3fb731-be19-46b0-9ef1-fa6c9bcfcfaf.jpg",
   },
   {
     id: 2,
@@ -16,23 +16,23 @@ const projects = [
     category: "Спальня",
     location: "ЛДСП, фурнитура Blum",
     year: "Под заказ",
-    image: "/images/hously-2.png",
+    image: "https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/74c90c38-f1ae-4f40-857a-0dc0b9ecaae0.jpg",
   },
   {
     id: 3,
-    title: "Кухонный гарнитур",
-    category: "Кухня",
-    location: "МДФ + фасады",
+    title: "Стеллаж для гостиной",
+    category: "Гостиная",
+    location: "Дерево + открытые полки",
     year: "Под заказ",
-    image: "/images/hously-3.png",
+    image: "https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/5a433082-5fb6-4c24-9038-4859c55aa26e.jpg",
   },
   {
     id: 4,
-    title: "Стеллаж для гостиной",
-    category: "Гостиная",
-    location: "Дерево + лак",
+    title: "Обеденный стол со стульями",
+    category: "Столовая",
+    location: "Массив + металл",
     year: "Под заказ",
-    image: "/images/hously-4.png",
+    image: "https://cdn.poehali.dev/projects/ec5938df-2759-48e4-89b4-6d5ce40db410/files/def02181-9c18-4931-86a9-6d5cfd60aaa3.jpg",
   },
 ]
 
