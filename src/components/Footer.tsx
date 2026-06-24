@@ -6,7 +6,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <span className="text-xl font-medium tracking-tight font-[Rubik]">Тёплое Дерево</span>
+              <span className="text-xl font-medium tracking-tight font-[Rubik]">ART Мебель</span>
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Мастерская мебели на заказ из натурального дерева. Делаем уютную мебель честно и с душой.
@@ -70,7 +70,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Тёплое Дерево. Все права защищены.</p>
+          <p>© 2025 ART Мебель. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
